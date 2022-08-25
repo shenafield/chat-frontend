@@ -26,7 +26,7 @@ jobs:
         shopt -s extglob
         rm -vrf !("dist")
         mv dist/* .
-        rm -rf dist .github
+        rm -rf dist .github .gitignore
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
