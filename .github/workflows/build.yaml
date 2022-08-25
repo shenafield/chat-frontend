@@ -23,6 +23,7 @@ jobs:
       name: build
     - name: Prepare git
       run: |
+        shopt -s extglob
         rm -vrf !("dist")
         mv dist/* .
         rm -rf dist
